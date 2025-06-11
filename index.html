@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kopi_kenangan_senja</title>
+    <script src="https://unpkg.com/feather-icons"></script>
+    <!-- ngambil dari website feather icons -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <nav class="navbar">
+      <a href="#" class="navbar_logo">Kenangan<span>Senja</span>.</a>
+      <div class="navbar_nav">
+        <a href="#home">Home</a>
+        <a href="#about">Tentang Kami</a>
+        <a href="#menu">Menu</a>
+        <a href="#contac">Kontak</a>
+      </div>
+      <div class="navbar_extra">
+        <!-- i = di dapatkan dari feather icons {di definisikan di head tadi}, untuk logo yang di inginkan bisa menyesuaikan data-feather di web nya -->
+        <button class="btnLogin-popUp" type="button">Login</button>
+        <a href="#" id="hamburger_menu"><i data-feather="menu"></i>></a>
+      </div>
+    </nav>
+    <header>
+      <div class="wrapper">
+        <span class="icon-close"
+          ><ion-icon name="close-circle-outline"></ion-icon
+        ></span>
+        <div class="form-box-login">
+          <h2>Login</h2>
+          <form action="#">
+            <div class="input-box">
+              <input type="email" required />
+              <label>NUPTK</label>
+            </div>
+            <div class="input-box">
+              <input type="password" required />
+              <label>password</label>
+            </div>
+            <div class="remember-forgot">
+              <label> <input type="checkbox" /> Remember Me</label>
+              <a href="#">Forgot password.?</a>
+            </div>
+            <button type="submit" class="btn">Login</button>
+            <div class="login-register">
+              <p>
+                Anda Bukan Admin.?
+                <a href="#" class="register-link">Masuk Laman OSIS</a>
+              </p>
+            </div>
+          </form>
+        </div>
+        <div class="form-box-register">
+          <h2>Login OSIS</h2>
+          <form action="#">
+            <div class="input-box">
+              <input type="text" required />
+              <label>NISN</label>
+            </div>
+            <div class="input-box">
+              <input type="password" required />
+              <label>password</label>
+            </div>
+            <div class="remember-forgot">
+              <label>
+                <input type="checkbox" /> I Agree to the Terms &
+                Conditions</label
+              >
+            </div>
+            <button type="submit" class="btn">Login</button>
+            <div class="login-register">
+              <p>
+                Anda Bukan Admin.?
+                <a href="#" class="register-link">Masuk Laman OSIS</a>
+              </p>
+            </div>
+          </form>
+        </div>
+      </div>
+    </header>
+    <section class="hero" id="home">
+      <main class="content">
+        <h1>Mari Nikmati Secangkir <span>Kopi</span></h1>
+        <p>
+          Lorem ipsum do lor, sit amet consectetur adipisicing elit. Vero, illo.
+        </p>
+        <a href="#" class="cta">Beli Sekarang</a>
+      </main>
+    </section>
+    <section id="about" class="about">
+      <h2><span>Tentang</span>Kami</h2>
+      <div class="row">
+        <div class="about-img">
+          <img src="img/baha2.jpg" alt="Tentang Kami" />
+        </div>
+        <div class="content">
+          <h3>Kenapa Memilih kopi kami</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi
+            explicabo perspiciatis asperiores provident consequatur est non
+            quibusdam iure vero distinctio!
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section id="menu" class="menu">
+      <h2>Menu<span>Kami</span></h2>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta corporis
+        quas laborum. Quibusdam animi voluptatem porro debitis, aspernatur quam
+        laboriosam.
+      </p>
+    </section>
+    <script>
+      feather.replace();
+    </script>
+    <script src="style.js"></script>
+  </body>
+</html>
