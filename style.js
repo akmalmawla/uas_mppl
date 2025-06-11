@@ -1,3 +1,5 @@
+// File nya nama nya style.js ? engga salah bang?
+
 // toggle  class active//
 const navbarNav = document.querySelector(".navbar_nav");
 
@@ -15,17 +17,27 @@ document.addEventListener("click", function (e) {
 });
 
 const wrapper = document.querySelector(".wrapper");
-const loginLink = document.querySelector(".login-link");
 const registerLink = document.querySelector(".register-link");
 const btnPopup = document.querySelector(".btnLogin-popUp");
+// Cek dulu ini mah, ada atau engga
+const loginLink = document.querySelector(".login-link");
 
 registerLink.addEventListener("click", () => {
   wrapper.classList.add("active");
 });
 
+// Tadi kan loginLink ada di atas, klo di js browser
+// klo ada 1 kode error di atas kode apapun, kode itu ga jalan
+// jadi mau ga mau di pindahin paling bawah atau ga ya di komentar
+btnPopup.addEventListener("click", () => {
+  // console.log("Trigger"); Usaha kan klo misal mau bikin apapun harus trigger dulu
+  // buat ngecek trus di inspect buat liat console nya
+  // download extension live server biar bisa ngecek secara realtime
+  wrapper.classList.remove("active-popup");
+});
+
+// Ini klo engga ada loginLink ga bakal bisa di tambahin add event listener nya
+// Solusi biar aman, jadi gini: if (loginLink) loginLink.addEventListener("click", .....
 loginLink.addEventListener("click", () => {
   wrapper.classList.remove("active");
-});
-btnPopup.addEventListener("click", () => {
-  wrapper.classList.remove("active-popup");
 });
